@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog &amp; Resources — insights on resilience coaching, remission, mindset, and recovery from Marcelo Marques." />
+  <title>Blog &amp; Resources — Marcelo Marques Coaching</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Blog-specific styles */
+    .blog-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 64px;
+      align-items: start;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .blog-card {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .blog-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+      transform: translateY(-3px);
+    }
+    .blog-card__thumb {
+      background: var(--primary);
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    .blog-card__body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card__meta {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .blog-card__category {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      background: rgba(var(--primary-rgb, 56, 97, 77), 0.08);
+      padding: 3px 10px;
+      border-radius: 2px;
+    }
+    .blog-card__date {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .blog-card__title {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 1.05rem;
+      color: var(--heading-text);
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+    .blog-card__excerpt {
+      font-size: 0.9rem;
+      color: var(--body-text);
+      line-height: 1.65;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+    .blog-card__link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .blog-card__link:hover { text-decoration: underline; }
+
+    /* Sidebar */
+    .blog-sidebar__widget {
+      background: #f7f7f5;
+      padding: 28px 24px;
+      margin-bottom: 32px;
+      border-left: 3px solid var(--primary);
+    }
+    .blog-sidebar__widget h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--heading-text);
+      margin-bottom: 16px;
+    }
+    .blog-sidebar__cat {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #e8e8e8;
+      font-size: 0.9rem;
+      color: var(--body-text);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .blog-sidebar__cat:last-child { border-bottom: none; }
+    .blog-sidebar__cat:hover { color: var(--primary); }
+    .blog-sidebar__cat span {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .blog-sidebar__cta {
+      background: var(--primary);
+      padding: 28px 24px;
+      color: #fff;
+      text-align: center;
+    }
+    .blog-sidebar__cta h3 {
+      color: #fff;
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+    }
+    .blog-sidebar__cta p {
+      font-size: 0.88rem;
+      opacity: 0.88;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .blog-layout { grid-template-columns: 1fr; }
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 600px) and (max-width: 900px) {
+      .blog-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Marcelo Marques<span>Coaching</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="book-now.html" class="btn-nav">Book Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero hero--page">
+  <div class="container">
+    <p class="hero__eyebrow">Insights &amp; Inspiration</p>
+    <h1 class="hero__title">Blog &amp; Resources</h1>
+    <p class="hero__sub">Practical insights, honest reflections, and evidence-based ideas on resilience, remission, and finding your new normal.</p>
+  </div>
+</section>
+
+<!-- BLOG MAIN -->
+<section class="section">
+  <div class="container">
+    <div class="blog-layout">
+
+      <!-- POSTS -->
+      <div>
+        <p class="section-sub">Latest Articles</p>
+        <h2 class="section-heading">From the Blog</h2>
+        <div class="divider divider--left"></div>
+
+        <div class="blog-grid" style="margin-top:32px;">
+
+          <!-- Post 1 -->
+          <div class="blog-card">
+            <div class="blog-card__thumb">🛡️</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Resilience</span>
+                <span class="blog-card__date">15 March 2025</span>
+              </div>
+              <div class="blog-card__title">What Resilience Really Means — and Why "Just Stay Strong" Misses the Point</div>
+              <p class="blog-card__excerpt">
+                True resilience isn't about gritting your teeth and pushing through. It's about 
+                developing a flexible, compassionate relationship with your own experience — and 
+                knowing when to rest, when to act, and when to ask for help.
+              </p>
+              <a href="#" class="blog-card__link">Read Article →</a>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="blog-card">
+            <div class="blog-card__thumb">🌿</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Remission</span>
+                <span class="blog-card__date">28 February 2025</span>
+              </div>
+              <div class="blog-card__title">The Hidden Challenges of Life in Remission — and How Coaching Can Help</div>
+              <p class="blog-card__excerpt">
+                For many people, finishing cancer treatment brings unexpected emotional complexity. 
+                The fear of recurrence, the loss of structure, the question "who am I now?" — 
+                these are real, valid, and navigable with the right support.
+              </p>
+              <a href="#" class="blog-card__link">Read Article →</a>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="blog-card">
+            <div class="blog-card__thumb">🧠</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Mindset</span>
+                <span class="blog-card__date">10 February 2025</span>
+              </div>
+              <div class="blog-card__title">Post-Traumatic Growth: How Adversity Can Become a Catalyst for Change</div>
+              <p class="blog-card__excerpt">
+                Research consistently shows that many people who face serious challenges emerge 
+                with a deeper sense of purpose, stronger relationships, and greater personal strength. 
+                Here's what the science says — and how to access it for yourself.
+              </p>
+              <a href="#" class="blog-card__link">Read Article →</a>
+            </div>
+          </div>
+
+          <!-- Post 4 -->
+          <div class="blog-card">
+            <div class="blog-card__thumb">💚</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Recovery</span>
+                <span class="blog-card__date">22 January 2025</span>
+              </div>
+              <div class="blog-card__title">Returning to Work After a Health Crisis: A Gentle Guide</div>
+              <p class="blog-card__excerpt">
+                Heading back to work after a period of serious illness can feel daunting. 
+                Setting realistic expectations, communicating your needs, and rebuilding 
+                confidence at your own pace are all central to a successful transition.
+              </p>
+              <a href="#" class="blog-card__link">Read Article →</a>
+            </div>
+          </div>
+
+          <!-- Post 5 -->
+          <div class="blog-card">
+            <div class="blog-card__thumb">🌱</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Resilience</span>
+                <span class="blog-card__date">8 January 2025</span>
+              </div>
+              <div class="blog-card__title">Five Daily Habits That Build Lasting Inner Strength</div>
+              <p class="blog-card__excerpt">
+                Resilience isn't built in a single moment — it's cultivated through small, 
+                intentional daily practices. From how you start your morning to how you 
+                reflect on challenges, these five habits can transform how you face adversity.
+              </p>
+              <a href="#" class="blog-card__link">Read Article →</a>
+            </div>
+          </div>
+
+          <!-- Post 6 -->
+          <div class="blog-card">
+            <div class="blog-card__thumb">🔑</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Remission</span>
+                <span class="blog-card__date">15 December 2024</span>
+              </div>
+              <div class="blog-card__title">Rediscovering Your Identity After Cancer Treatment</div>
+              <p class="blog-card__excerpt">
+                Serious illness has a way of reshaping who we are. For many people in remission, 
+                rediscovering a sense of self — independent of the illness — is one of the most 
+                meaningful and hopeful parts of the journey forward.
+              </p>
+              <a href="#" class="blog-card__link">Read Article →</a>
+            </div>
+          </div>
+
+        </div><!-- /blog-grid -->
+      </div>
+
+      <!-- SIDEBAR -->
+      <div>
+
+        <!-- Categories -->
+        <div class="blog-sidebar__widget">
+          <h3>Browse by Category</h3>
+          <a href="#" class="blog-sidebar__cat">Resilience <span>8 articles</span></a>
+          <a href="#" class="blog-sidebar__cat">Remission <span>6 articles</span></a>
+          <a href="#" class="blog-sidebar__cat">Mindset <span>5 articles</span></a>
+          <a href="#" class="blog-sidebar__cat">Recovery <span>4 articles</span></a>
+        </div>
+
+        <!-- About Marcelo mini -->
+        <div class="blog-sidebar__widget">
+          <h3>About Marcelo</h3>
+          <p style="font-size:0.9rem;color:var(--body-text);line-height:1.65;margin-bottom:16px;">
+            Marcelo Marques is a certified resilience and remission coach helping 
+            professionals navigate life's greatest challenges and find their new normal.
+          </p>
+          <a href="about.html" style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--primary);text-decoration:none;">
+            Learn More →
+          </a>
+        </div>
+
+        <!-- Sidebar CTA -->
+        <div class="blog-sidebar__cta">
+          <h3>Ready to Start?</h3>
+          <p>Book a free 30-minute discovery call and take the first step on your journey.</p>
+          <a href="book-now.html" class="btn btn--white" style="width:100%;display:block;text-align:center;box-sizing:border-box;">Book Free Call</a>
+        </div>
+
+      </div><!-- /sidebar -->
+
+    </div><!-- /blog-layout -->
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Want Support, Not Just Insights?</h2>
+    <p>Reading can only take you so far. If you're ready to make real change, let's talk — your free discovery call is waiting.</p>
+    <a href="book-now.html" class="btn btn--white btn--large">Book a Free Discovery Call</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">Marcelo Marques<span>Coaching</span></a>
+        <p class="footer-desc">Resilience and remission coaching for professionals navigating life's greatest challenges and life after cancer treatment.</p>
+        <div class="footer-social" style="margin-top:20px;">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Twitter / X">𝕏</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Support</p>
+        <ul class="footer-nav">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="book-now.html">Book Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <ul class="footer-nav">
+          <li><a href="mailto:hello@marcelomarquescoaching.com">hello@marcelomarquescoaching.com</a></li>
+          <li style="color:rgba(255,255,255,0.5);font-size:0.9rem;margin-top:4px;">Online &amp; UK-based</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Marcelo Marques Coaching. All rights reserved.</span>
+      <span>Designed with care.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
