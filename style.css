@@ -857,6 +857,7 @@ p:last-child { margin-bottom: 0; }
     transition: max-height 0.35s ease;
   }
   .nav-toggle:checked ~ .site-nav { max-height: 500px; }
+  .site-nav.nav-open { max-height: 500px; }
   .site-nav a {
     height: auto;
     line-height: 1;
