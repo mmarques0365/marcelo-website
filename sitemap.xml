@@ -41,44 +41,48 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://marcelomarquescoaching.com/blog-what-is-remission-coaching.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://marcelomarquescoaching.com/blog-the-day-i-stopped-pretending.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://marcelomarquescoaching.com/blog-feeling-lost-after-cancer-treatment.html</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://marcelomarquescoaching.com/blog-hidden-challenges-of-remission.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://marcelomarquescoaching.com/blog-five-habits-inner-strength.html</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://marcelomarquescoaching.com/blog-post-traumatic-growth.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://marcelomarquescoaching.com/blog-rediscovering-identity.html</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-02-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://marcelomarquescoaching.com/blog-returning-to-work.html</loc>
     <changefreq>monthly</changefreq>
+    <lastmod>2025-01-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://marcelomarquescoaching.com/blog-the-day-i-stopped-pretending.html</loc>
+    <loc>https://marcelomarquescoaching.com/blog-five-habits-inner-strength.html</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marcelomarquescoaching.com/blog-rediscovering-identity.html</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marcelomarquescoaching.com/blog-what-is-remission-coaching.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marcelomarquescoaching.com/blog-feeling-lost-after-cancer-treatment.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
