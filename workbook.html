@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5 Steps Workbook — Marcelo Marques Coaching</title>
+  <meta name="description" content="A personal coaching workbook to help you rebuild your life after cancer. By Marcelo Marques, Resilience and Remission Coach." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #F5F0E8;
+      color: #2a1508;
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      background: #5C3317;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a.brand {
+      color: #F5F0E8;
+      text-decoration: none;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    nav a.nav-link {
+      color: rgba(245,240,232,0.65);
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+    nav a.nav-link:hover { color: #C9963A; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(160deg, #5C3317 0%, #2a1508 100%);
+      padding: 80px 40px 70px;
+      text-align: center;
+      color: #F5F0E8;
+    }
+    .hero-tag {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #C9963A;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.2;
+      max-width: 620px;
+      margin: 0 auto 18px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: rgba(245,240,232,0.65);
+      font-style: italic;
+      max-width: 500px;
+      margin: 0 auto 36px;
+    }
+    .hero-price {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: rgba(245,240,232,0.5);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .hero-amount {
+      font-size: 52px;
+      font-weight: bold;
+      color: #C9963A;
+      margin-bottom: 28px;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: #C9963A;
+      color: #fff;
+      padding: 16px 40px;
+      border-radius: 6px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #b07e28; }
+    .hero-sub {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: rgba(245,240,232,0.35);
+      margin-top: 14px;
+    }
+
+    /* SECTION */
+    .section { padding: 64px 40px; max-width: 780px; margin: 0 auto; }
+    .section-tag {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #C9963A;
+      margin-bottom: 12px;
+    }
+    .section h2 { font-size: 28px; color: #5C3317; margin-bottom: 14px; }
+    .gold-rule { width: 40px; height: 3px; background: #C9963A; margin-bottom: 24px; }
+    .section p { font-size: 16px; line-height: 1.85; color: #2a1508; margin-bottom: 14px; }
+
+    /* WHAT'S INSIDE */
+    .inside-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 28px;
+    }
+    @media (max-width: 600px) { .inside-grid { grid-template-columns: 1fr; } }
+    .inside-item {
+      background: #fff;
+      border: 1px solid rgba(92,51,23,0.12);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+    .inside-item-num {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: #5C3317; color: #C9963A;
+      font-size: 16px; font-weight: bold;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 12px; font-family: Arial, sans-serif;
+    }
+    .inside-item h3 { font-size: 15px; color: #5C3317; margin-bottom: 6px; }
+    .inside-item p { font-size: 13.5px; color: rgba(42,21,8,0.7); line-height: 1.65; margin: 0; }
+
+    /* CALLOUT */
+    .callout {
+      background: rgba(92,51,23,0.07);
+      border-left: 4px solid #C9963A;
+      border-radius: 0 8px 8px 0;
+      padding: 22px 26px;
+      margin: 24px 0;
+    }
+    .callout p { font-size: 15.5px; font-style: italic; color: #2a1508; margin: 0; }
+
+    /* AUTHOR */
+    .author-section {
+      background: #5C3317;
+      padding: 60px 40px;
+      color: #F5F0E8;
+    }
+    .author-inner { max-width: 680px; margin: 0 auto; }
+    .author-section .section-tag { color: #C9963A; }
+    .author-section h2 { font-size: 26px; color: #F5F0E8; margin-bottom: 14px; }
+    .author-section .gold-rule { background: #C9963A; }
+    .author-section p { font-size: 15.5px; color: rgba(245,240,232,0.8); line-height: 1.85; margin-bottom: 14px; }
+
+    /* STEPS LIST */
+    .steps-list { list-style: none; margin-top: 24px; }
+    .steps-list li {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(92,51,23,0.1);
+      font-size: 15px;
+      color: #2a1508;
+    }
+    .steps-list li:last-child { border-bottom: none; }
+    .step-dot {
+      width: 30px; height: 30px; border-radius: 50%;
+      background: #5C3317; color: #C9963A;
+      font-size: 13px; font-weight: bold;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-family: Arial, sans-serif;
+    }
+    .step-text strong { color: #5C3317; display: block; margin-bottom: 2px; }
+    .step-text span { font-size: 13.5px; color: rgba(42,21,8,0.65); }
+
+    /* CTA BOTTOM */
+    .cta-section {
+      text-align: center;
+      padding: 70px 40px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .cta-section h2 { font-size: 28px; color: #5C3317; margin-bottom: 14px; }
+    .cta-section .gold-rule { margin: 0 auto 24px; }
+    .cta-section p { font-size: 15.5px; color: rgba(42,21,8,0.75); margin-bottom: 32px; line-height: 1.8; }
+
+    /* DISCLAIMER */
+    .disclaimer-bar {
+      background: rgba(92,51,23,0.06);
+      padding: 20px 40px;
+      text-align: center;
+    }
+    .disclaimer-bar p {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: rgba(42,21,8,0.4);
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2a1508;
+      padding: 24px 40px;
+      text-align: center;
+    }
+    footer p {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: rgba(245,240,232,0.3);
+    }
+    footer a { color: #C9963A; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="brand" href="/">Marcelo Marques Coaching</a>
+    <a class="nav-link" href="/">Back to website</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">Personal Workbook</div>
+    <h1>5 Steps to Rebuild Your Life After Cancer</h1>
+    <p>A guided workbook to help you move from surviving to fully living</p>
+    <div class="hero-price">One-time payment</div>
+    <div class="hero-amount">£27</div>
+    <a class="btn-primary" href="https://buy.stripe.com/PLACEHOLDER" id="buy-btn">Get the Workbook</a>
+    <div class="hero-sub">Instant PDF download &nbsp;|&nbsp; Personal use licence &nbsp;|&nbsp; Secure payment</div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="section">
+    <div class="section-tag">Who this is for</div>
+    <h2>This is for you if you have finished treatment and are wondering what comes next.</h2>
+    <div class="gold-rule"></div>
+    <p>You have been through something enormous. The NHS got you through it. But now the appointments are fewer, the support has stepped back, and you are left standing in a space nobody quite prepared you for.</p>
+    <p>Not ill. Not fully well. Somewhere in between.</p>
+    <div class="callout">
+      <p>You are allowed to want more than just survival. This workbook is the space to work out what that actually looks like for you.</p>
+    </div>
+  </section>
+
+  <!-- WHAT'S INSIDE -->
+  <div style="background:#fff; padding: 60px 40px;">
+    <div style="max-width:780px; margin: 0 auto;">
+      <div class="section-tag">What is inside</div>
+      <h2 style="font-size:28px; color:#5C3317; margin-bottom:14px;">A coaching experience in a document</h2>
+      <div class="gold-rule"></div>
+      <p style="font-size:16px; line-height:1.85; color:#2a1508; margin-bottom:28px;">This is not a guide to read and put down. Every step has a personal note from Marcelo, two exercises that go straight to the heart of what you are actually going through, and a commitment section so something real changes each week.</p>
+      <div class="inside-grid">
+        <div class="inside-item">
+          <div class="inside-item-num">1</div>
+          <h3>Allow Yourself to Feel</h3>
+          <p>Stop performing. Start telling the truth, at least to yourself.</p>
+        </div>
+        <div class="inside-item">
+          <div class="inside-item-num">2</div>
+          <h3>Understand Your Fear</h3>
+          <p>Name what is really going on underneath the scan anxiety and the "I'm fine."</p>
+        </div>
+        <div class="inside-item">
+          <div class="inside-item-num">3</div>
+          <h3>Rebuild Your Identity</h3>
+          <p>Work out who you are choosing to become, not who you were before.</p>
+        </div>
+        <div class="inside-item">
+          <div class="inside-item-num">4</div>
+          <h3>Reconnect</h3>
+          <p>With the people who matter. With your purpose. With your own body.</p>
+        </div>
+        <div class="inside-item">
+          <div class="inside-item-num">5</div>
+          <h3>Design Your Fuller Life</h3>
+          <p>Give yourself permission to want more than just survival.</p>
+        </div>
+        <div class="inside-item">
+          <div class="inside-item-num" style="background:#C9963A; color:#fff;">+</div>
+          <h3>Letter to Your Future Self</h3>
+          <p>A powerful closing exercise. Write it now. Read it in a year.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT MARCELO -->
+  <section class="author-section">
+    <div class="author-inner">
+      <div class="section-tag">About the author</div>
+      <h2>Written by someone who has been through it. Twice.</h2>
+      <div class="gold-rule"></div>
+      <p>My name is Marcelo Marques. I am a resilience and remission coach based in London, and I have been in remission twice.</p>
+      <p>I know what it feels like to finish treatment and not recognise the person looking back at you. I know the gap between what you say and what you actually feel. I know the fear that settles in after the scans, quieter than during treatment but just as persistent.</p>
+      <p>I wrote this workbook because nobody gave it to me when I needed it. And because I have seen, again and again, that when someone is properly supported through the remission journey, something remarkable becomes possible.</p>
+      <p style="font-style:italic; color:rgba(245,240,232,0.6);">Marcelo Marques &nbsp;|&nbsp; Resilience and Remission Coach &nbsp;|&nbsp; marcelomarquescoaching.com</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to begin?</h2>
+    <div class="gold-rule"></div>
+    <p>One payment. Instant download. Work through it at your own pace, in your own time, completely privately.</p>
+    <a class="btn-primary" href="https://buy.stripe.com/PLACEHOLDER">Get the Workbook for £27</a>
+    <p style="font-size:12px; font-family:Arial,sans-serif; color:rgba(42,21,8,0.4); margin-top:16px; margin-bottom:0;">Secure payment via Stripe. PDF delivered instantly after purchase.</p>
+  </section>
+
+  <div class="disclaimer-bar">
+    <p>This workbook is a coaching resource and does not constitute medical, psychological or therapeutic advice. If you are struggling with your mental health, please speak to your GP. For support: Macmillan Cancer Support 0808 808 00 00 &nbsp;|&nbsp; Samaritans 116 123 &nbsp;|&nbsp; Marie Curie 0800 090 2309</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Marcelo Marques Coaching &nbsp;|&nbsp; <a href="/">marcelomarquescoaching.com</a> &nbsp;|&nbsp; <a href="/book-now.html">Book a free discovery call</a></p>
+  </footer>
+
+</body>
+</html>
