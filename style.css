@@ -720,8 +720,9 @@ p:last-child { margin-bottom: 0; }
 .contact-info h3 { color: #fff; margin-bottom: 28px; font-size: 1.2rem; }
 .contact-info-item { display: flex; gap: 16px; margin-bottom: 24px; align-items: flex-start; }
 .contact-info-item .ci-icon { font-size: 1.2rem; margin-top: 2px; opacity: 0.8; }
+.contact-info-item > div { min-width: 0; }
 .contact-info-item strong { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.88rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; opacity: 0.75; }
-.contact-info-item span, .contact-info-item a { color: rgba(255,255,255,0.9); font-size: 0.97rem; }
+.contact-info-item span, .contact-info-item a { color: rgba(255,255,255,0.9); font-size: 0.97rem; overflow-wrap: anywhere; }
 .social-links { display: flex; gap: 12px; margin-top: 28px; }
 .social-links a {
   width: 40px; height: 40px;
@@ -750,6 +751,7 @@ p:last-child { margin-bottom: 0; }
   gap: 40px;
   padding-bottom: 48px;
 }
+.footer-grid > div { min-width: 0; }
 .footer-logo {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
@@ -777,6 +779,7 @@ p:last-child { margin-bottom: 0; }
   color: rgba(255,255,255,0.65) !important;
   font-size: 0.9rem;
   transition: color 0.2s;
+  overflow-wrap: anywhere;
 }
 .footer-nav a:hover { color: var(--primary-hover) !important; }
 .footer-social { display: flex; gap: 10px; }
