@@ -715,7 +715,7 @@ p:last-child { margin-bottom: 0; }
    CONTACT INFO
    ============================================================ */
 
-.contact-grid { display: grid; grid-template-columns: 1fr 340px; gap: 64px; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: 1fr 380px; gap: 64px; align-items: start; }
 .contact-info { padding: 40px 32px; background: var(--primary); color: #fff; }
 .contact-info h3 { color: #fff; margin-bottom: 28px; font-size: 1.2rem; }
 .contact-info-item { display: flex; gap: 16px; margin-bottom: 24px; align-items: flex-start; }
@@ -723,6 +723,7 @@ p:last-child { margin-bottom: 0; }
 .contact-info-item > div { min-width: 0; }
 .contact-info-item strong { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.88rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; opacity: 0.75; }
 .contact-info-item span, .contact-info-item a { color: rgba(255,255,255,0.9); font-size: 0.97rem; overflow-wrap: anywhere; }
+.contact-info-item a.email-link { white-space: nowrap; font-size: 0.82rem; }
 .social-links { display: flex; gap: 12px; margin-top: 28px; }
 .social-links a {
   width: 40px; height: 40px;
@@ -747,7 +748,7 @@ p:last-child { margin-bottom: 0; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  grid-template-columns: 1.2fr 0.85fr 0.85fr 1.5fr;
   gap: 40px;
   padding-bottom: 48px;
 }
@@ -782,6 +783,7 @@ p:last-child { margin-bottom: 0; }
   overflow-wrap: anywhere;
 }
 .footer-nav a:hover { color: var(--primary-hover) !important; }
+.footer-nav a.email-link { white-space: nowrap; font-size: 0.78rem; }
 .footer-social { display: flex; gap: 10px; }
 .footer-social a {
   width: 36px; height: 36px;
