@@ -2,7 +2,8 @@
    Marcelo Marques Coaching — Shared Stylesheet
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+/* Fonts are loaded via <link> tags in each page's <head> (not @import)
+   so they fetch in parallel with this stylesheet instead of after it. */
 
 /* ── CSS Variables ── */
 :root {
@@ -14,7 +15,7 @@
   --dark:               #161616;
   --body-text:          #5e5e5e;
   --heading-text:       #1b1b1b;
-  --muted:              #a4a4a4;
+  --muted:              #6e6e6e;
   --bg:                 #ffffff;
   --border:             #e2e2e2;
   --section-pad:        64px;
@@ -296,7 +297,7 @@ p:last-child { margin-bottom: 0; }
   padding: 6px 14px;
   margin-bottom: 16px;
 }
-.mission__aside h3 {
+.mission__aside h2 {
   font-size: 1.4rem;
   margin-bottom: 12px;
 }
@@ -559,7 +560,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--body-text);
 }
 .faq-item input:checked ~ .faq-answer {
-  max-height: 400px;
+  max-height: 1200px;
   padding-bottom: 20px;
 }
 
@@ -825,7 +826,7 @@ p:last-child { margin-bottom: 0; }
   font-size: 14px;
   display: flex; align-items: center; justify-content: center;
 }
-.step h4 {
+.step h3 {
   font-size: 0.95rem;
   margin-bottom: 8px;
   margin-top: 8px;
