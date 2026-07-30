@@ -43,6 +43,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://marcelomarquescoaching.com/privacy-policy.html</loc>
+    <changefreq>yearly</changefreq>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://marcelomarquescoaching.com/terms.html</loc>
+    <changefreq>yearly</changefreq>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://marcelomarquescoaching.com/free-guide.html</loc>
     <changefreq>monthly</changefreq>
     <lastmod>2026-07-28</lastmod>
