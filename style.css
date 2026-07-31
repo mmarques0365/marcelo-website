@@ -267,6 +267,20 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.7;
 }
 .hero__cta { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+.hero__inner { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; }
+.hero__image { display: flex; justify-content: flex-end; }
+.hero__image img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 12px;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.35);
+  display: block;
+}
+@media (max-width: 900px) {
+  .hero__inner { grid-template-columns: 1fr; gap: 32px; }
+  .hero__image { justify-content: center; }
+  .hero__image img { max-width: 240px; }
+}
 
 /* ============================================================
    MISSION / INTRO
