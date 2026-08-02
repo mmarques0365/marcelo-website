@@ -223,7 +223,7 @@ p:last-child { margin-bottom: 0; }
    ============================================================ */
 
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-link) 60%, #3d2b1a 100%);
+  background: linear-gradient(135deg, #5C3317 0%, #3d2b1a 60%, #2a1508 100%);
   color: #fff;
   padding: 100px 0 80px;
   position: relative;
@@ -239,7 +239,7 @@ p:last-child { margin-bottom: 0; }
 }
 .hero--page {
   padding: 60px 0 50px;
-  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-link) 100%);
+  background: linear-gradient(135deg, #5C3317 0%, #2a1508 100%);
 }
 .hero__eyebrow {
   font-family: 'Montserrat', sans-serif;
@@ -247,7 +247,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  opacity: 0.75;
+  opacity: 1;
   margin-bottom: 16px;
 }
 .hero__title {
